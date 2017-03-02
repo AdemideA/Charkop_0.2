@@ -10,15 +10,27 @@ id: 'mapbox://styles/mapbox/dark-v9',
 access_token: 'pk.eyJ1IjoiYWRlbWlkZWEiLCJhIjoiY2l6ZGJueHpzMXV0MDJxcW9qYjc2ZnYzYyJ9.3ulYJ3UmEqZn7HHyX-vs7g'
 }).addTo(map);
 
-$.getJSON("data/data.geoJson", function(data) { 
-L.geoJson(data, {
-    style: function (feature) {
-    var SectorColour;
-      if(feature.properties.name == 10) {
-        SectorColour = 'red';
-      }
-    }
-// customColor = colorsArray[0];
-})
-}).addTo(map)
+
+$.getJSON("data/data.geojson", function(data) { 
+	console.log(data)
+});
+
+	//var options = 
+	//	style: function(feature) {
+	//	var SectorColour;
+	//	if (feature.properties.name == 10){
+	//	SectorColour = #b2b2b2
+	//	}
+
+	//	return {
+      //  color: SectorColour,
+        //fillColor: SectorColour,
+        //weight: 2,
+    //}
+//};
+	
+L.geoJson(data).addTo(map);
+
+
+
 
