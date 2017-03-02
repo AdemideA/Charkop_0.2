@@ -1,0 +1,28 @@
+#mapContainer {
+margin: 0 auto;
+width: 700px;
+height:	500px;
+}
+.leaflet-popup-content {
+  font-size: 20px;
+}
+  .header p { 
+  background: darkblue;
+  padding: 20px;
+  margin: 0 0 20px 0;
+  color: white;
+  font-size: 18pt;
+  } 
+  
+  img {
+  width: 50px;
+  float: left;
+  position: relative;
+  top: 15px;
+  margin: 0 15px 0 15px;
+}
+
+h1 {
+  font-size: 12pt;
+  ;
+}
