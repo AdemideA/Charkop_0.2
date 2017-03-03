@@ -17,26 +17,52 @@ $.getJSON("data/data.geojson", function(data) {
 	var options = {
 		style: function(feature) {
 			var SectorColour;
-			
-			if (feature.properties.name == 10) {
-				SectorColour = '#b2b2b2';
+
+			if (feature.properties.ID == 1) {
+				SectorColour = '#b3e2cd';
+			}
+
+			if (feature.properties.ID == 2) {
+				SectorColour = '#fdcdac';
+			}
+
+			if (feature.properties.ID == 3) {
+				SectorColour = '#cbd5e8';
+			}
+
+			if (feature.properties.ID == 4) {
+				SectorColour = '#f4cae4';
+			}
+
+			if (feature.properties.ID == 5) {
+				SectorColour = '#e6f5c9';
+			}
+
+			if (feature.properties.ID == 6) {
+				SectorColour = '#fff2ae';
+			}
+
+			if (feature.properties.ID == 7) {
+				SectorColour = '#f1e2cc';
 			}
 
 			return {
-		       color: SectorColour,
+		      	color: SectorColour,
 		        fillColor: SectorColour,
+		        fillopacity: 1,
 		        weight: 2,
 	    	}
-		};	
+		}	
 	}
-
-
-
-		
 	
+	// onEachFeature: function (feature, layer) {
+ //        layer.on('click', function(){
+	// 		bindPopup(feature.properties.sector).openPopup()
+ // 		})
+ // 	}
+ 
+ 	
 	L.geoJson(data, options).addTo(map);
-
-
 
 });
 
