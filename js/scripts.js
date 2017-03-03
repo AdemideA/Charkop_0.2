@@ -55,11 +55,10 @@ $.getJSON("data/data.geojson", function(data) {
 		}	
 	}
 	
-	// onEachFeature: function (feature, layer) {
- //        layer.on('click', function(){
-	// 		bindPopup(feature.properties.sector).openPopup()
- // 		})
- // 	}
+	function onEachFeature (feature, layer) {
+       layer.bindPopup(feature.properties.sector);
+ 	}
+ 
  
  	
 	L.geoJson(data, options).addTo(map);
