@@ -13,24 +13,37 @@ access_token: 'pk.eyJ1IjoiYWRlbWlkZWEiLCJhIjoiY2l6ZGJueHpzMXV0MDJxcW9qYjc2ZnYzYy
 
 $.getJSON("data/data.geojson", function(data) { 
 	console.log(data)
+
+	var options = {
+		style: function(feature) {
+			var SectorColour;
+			
+			if (feature.properties.name == 10) {
+				SectorColour = '#b2b2b2';
+			}
+
+			return {
+		       color: SectorColour,
+		        fillColor: SectorColour,
+		        weight: 2,
+	    	}
+		};	
+	}
+
+
+
+		
+	
+	L.geoJson(data, options).addTo(map);
+
+
+
 });
 
-	//var options = 
-	//	style: function(feature) {
-	//	var SectorColour;
-	//	if (feature.properties.name == 10){
-	//	SectorColour = #b2b2b2
-	//	}
 
-	//	return {
-      //  color: SectorColour,
-        //fillColor: SectorColour,
-        //weight: 2,
-    //}
-//};
+
+
 	
-L.geoJson(data).addTo(map);
-
 
 
 
