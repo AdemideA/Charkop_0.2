@@ -52,12 +52,28 @@ $.getJSON("data/data.geojson", function(data) {
 		        fillopacity: 1,
 		        weight: 2,
 	    	}
-		}	
-	}
+		},	
+	// }
 	
-	function onEachFeature (feature, layer) {
-       layer.bindPopup(feature.properties.Sector);
- 	}
+	
+		onEachFeature: function (feature, layer) {
+			layer.on('click', function(){
+				$('#sidebar h2').text(feature.properties.Sector);
+				$('#sidebar h3').text(feature.properties.Observations)	
+			})
+		}
+
+		// onEachFeature: function (feature, layer) {
+		// 	layer.on('click', function(){
+		// 		$('#sidebar h3').text(feature.properties.Observations)	
+		// 	})
+		// }		
+	
+	}
+
+	// function onEachFeature (feature, layer) {
+ //       layer.bindPopup(feature.properties.Sector);
+ // 	}
  
  
  	

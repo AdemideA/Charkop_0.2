@@ -5,7 +5,8 @@
       "type": "Feature",
       "properties": {
         "ID": 1,
-        "Sector": "Sector 1"
+        "Sector": "Sector 1",
+        "Observations": "Waste Baskets, Street Lighting, Sidewalks, Drainage, Open Space"
       },
       "geometry": {
         "type": "Polygon",
@@ -39,7 +40,8 @@
       "type": "Feature",
       "properties": {
         "ID": 2,
-        "Sector": "Sector 2"
+        "Sector": "Sector 2",
+        "Observations": "No Observations"
       },
       "geometry": {
         "type": "Polygon",
@@ -101,7 +103,8 @@
       "type": "Feature",
       "properties": {
         "ID": 5,
-        "Sector": "Sector 5"
+        "Sector": "Sector 5",
+        "Observations": "Street Lighting, Drainage Under Construction"
       },
       "geometry": {
         "type": "Polygon",
@@ -187,7 +190,8 @@
       "type": "Feature",
       "properties": {
         "ID": 3,
-        "Sector": "Sector 3"
+        "Sector": "Sector 3",
+        "Observations": "Street Lighting, Sidewalks"
       },
       "geometry": {
         "type": "Polygon",
@@ -221,7 +225,8 @@
       "type": "Feature",
       "properties": {
         "ID": 6,
-        "Sector": "Sector 6"
+        "Sector": "Sector 6",
+        "Observations": "No Observations"
       },
       "geometry": {
         "type": "Polygon",
@@ -279,7 +284,8 @@
       "type": "Feature",
       "properties": {
         "ID": 4,
-        "Sector": "Sector 4"
+        "Sector": "Sector 4",
+        "Observations": "Street Lighting, Sidewalks, Open Space"
       },
       "geometry": {
         "type": "Polygon",
@@ -313,7 +319,8 @@
       "type": "Feature",
       "properties": {
         "ID": 7,
-        "Sector": "Sector 7"
+        "Sector": "Sector 7",
+        "Observations": "Street Lighting, Sidewalks, Public Space"
       },
       "geometry": {
         "type": "Polygon",
