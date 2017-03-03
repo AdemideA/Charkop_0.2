@@ -56,7 +56,7 @@ $.getJSON("data/data.geojson", function(data) {
 	}
 	
 	function onEachFeature (feature, layer) {
-       layer.bindPopup(feature.properties.sector);
+       layer.bindPopup(feature.properties.Sector);
  	}
  
  
